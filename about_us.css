@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: aliceblue;
+}
+
+/*===========Body Transition Starts============*/
+body{
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+/*===========Body Transition Ends============*/
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*==============Nav Bar Starts Here===================*/
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: aliceblue;
+    margin: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid rgb(209, 99, 99);
+        border-bottom: 3px solid rgb(209, 99, 99);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: rgb(59, 59, 59);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.589);
+    }
+
+    nav:active{
+        display: block;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem;
+    }
+
+    nav a:hover
+    nav a:active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem;
+    }
+}
+
+/*=============Nav Bar Ends Here====================*/
+
+.container{
+    width: 80%;
+    margin: 100px auto;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+} 
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: red;
+    font-size: 19px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 2rem;
+}
+.content-section .content .button a{
+    background-color: rgb(255, 0, 0);
+    padding: 12px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+}
+
+.content-section .content .button a:hover{
+    background-color: rgb(248, 99, 99);
+    color: black;
+}
+
+.content-section .social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid red;
+    font-size: 18px;
+    border-radius: 50%;
+    margin: 25px 12px 20px 0;
+    transition: 0.3s;
+    color: rgb(228, 66, 66);
+}
+
+.content-section .social a:hover{
+    color: black;
+    background-color: red;
+    transform: scale(1.3) translateY(-2px);
+    box-shadow: 0 0 25px red;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 70px;
+    }
+
+    .content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+}
+
+.image-section img{
+    border-radius: 20%;
+}
+
+/*----------Button----------*/
+.read-more summary{
+    cursor: pointer;
+    color: red;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.read-more summary:hover{
+    text-decoration: underline;
+}
+
+.read-more p{
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+/*----------Menu-----------*/
+.menu-btn{
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:995px){
+
+    .menu-btn{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        display: none;
+        top: 70px;
+        right: 0;
+        width: 50%;
+        background-color: rgb(59, 59, 59);
+        border-left: 3px solid red;
+        padding: 2rem;
+    }
+
+    nav a{
+        display: block;
+        margin: 2rem 0;
+    }
+
+    nav.active{
+        display: block;
+    }
+
+}
+
+.cv{
+    font-size: 15px;
+    margin-top: 15px;
+    
+}
+
+.cv a{
+    background-color: red;
+    color: aliceblue;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.cv a:hover{
+    transform: translate(2px);
+    color: black;
+    background: white;
+    box-shadow: 0 0 25px rgb(250, 248, 248);
+}
+
+/*--------logo------------*/
+.logo img{
+    width: 120px;   /* adjust size */
+    height: auto;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 130px;
+    filter: brightness(0) saturate(100%) invert(19%) sepia(96%) saturate(6294%) hue-rotate(355deg) brightness(97%) contrast(113%);
+}

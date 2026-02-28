@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="about_us.css">
+  </head>
+  <body>
+    <!-----------Nav Bar Starts------->
+    <header>
+        <a href="#" class="logo">
+            <img src="logoo.png" alt="Logo">
+        </a>
+         <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
+        
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about_us.html" class="active">About</a>
+        <a href="my_project.html">My Project</a>
+        
+    </nav>
+    </header>
+
+   <!------------Nav Bar Ends--------->
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <h3>
+                        Hire for What's Next
+                    </h3>
+                        <p>
+                            As an experienced IT Officer, I bring a comprehensive background in managing, maintaining, 
+                            and securing IT systems and infrastructure.
+                            My role involves the installation, configuration, 
+                            and maintenance of computer hardware, software, and networks to ensure the seamless operation of business processes. 
+                            I am well-versed in troubleshooting hardware and software issues across desktops, laptops, printers, and servers, 
+                            delivering efficient technical support to users and resolving IT-related challenges with precision.
+                            With a strong focus on network management. 
+                        </p>
+                        
+
+                        <details class="read-more">
+                            <summary>Read More</summary>
+                            <p>
+                                I handle the configuration and monitoring of routers, switches, 
+                                firewalls, and VPNs, ensuring optimal performance and data security. 
+                                I also take proactive steps to safeguard IT environments through data backups, 
+                                antivirus management, and access control, aligning with cybersecurity best practices.
+                                Beyond my technical support role, I evaluate and recommend emerging technologies and 
+                                solutions to improve operational efficiency and organizational productivity. 
+                                My ability to adapt to dynamic environments and provide innovative solutions 
+                                positions me as a valuable asset in any tech-driven organization.
+                            </p>
+                        </details>
+
+                        <div class="cv">
+                            <a href="VICTOR CV 2+.pdf" target="_blank" class="btn">
+                            Download CV
+                            </a>
+                        </div>
+
+                        </div>
+                        
+                <div class="social">
+                     <a href="www.linkedin.com/in/victor-okolodibe-678695305" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/Vktr77" target="_blank"><i class="fa-brands fa-github"></i></a>
+                     <a href="https://wa.me/2348163528954"><i class="fa-brands fa-whatsapp"></i></a>
+
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="gemini me.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function toggleMenu(){
+        document.getElementById("navMenu").classList.toggle("active");
+    }
+    </script>
+
+  </body>
+</html>

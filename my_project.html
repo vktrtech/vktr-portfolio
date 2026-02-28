@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="my_project.css">
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logoo.png" alt="Logo">
+        </a>
+        <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About</a>
+            <a href="my_project.html" class="active">My Project</a>
+            
+        </nav>
+    </header>
+    
+    <div class="image-grid">
+
+        <img src="img2.jpeg" alt="">
+        <img src="img1.jpeg" alt="">
+        <img src="img3.jpeg" alt="">
+        <img src="img4.jpeg" alt="">
+
+    </div>
+
+    <script>
+    function toggleMenu(){
+        document.getElementById("navMenu").classList.toggle("active");
+    }
+    </script>
+
+  </body>
+</html>
